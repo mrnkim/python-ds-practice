@@ -21,3 +21,13 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+
+    new_phrase = phrase.lower().replace(" ","")
+    end = len(new_phrase)//2
+    if len(new_phrase) %2 == 0:
+         end -= 1
+
+    backhalf_backwards = new_phrase[-1:end:-1]
+    fronthalf = new_phrase[0:len(new_phrase)//2]
+
+    return backhalf_backwards == fronthalf
