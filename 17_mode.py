@@ -12,4 +12,15 @@ def mode(nums):
         2
     """
 
+    counter = {}
+    for num in nums:
+        counter[num] = counter.get(num, 0) + 1
 
+    maxKey = 0
+    max = 0
+    for (key, count) in counter.items():
+        if count > max:
+            max = count
+            maxKey = key
+
+        return maxKey

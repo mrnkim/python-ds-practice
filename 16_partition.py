@@ -20,3 +20,7 @@ def partition(lst, fn):
         [['hi', 'bye'], [None, 6]]
     """
 
+    a = [item for item in lst if fn(item) == True]
+    b = [item for item in lst if fn(item) == False]
+
+    return [a, b]
