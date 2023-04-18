@@ -41,6 +41,11 @@ def list_manipulation(lst, command, location, value=None):
         True
     """
 
+    #TODO: replace != with not
+    """plug in loc and command vals at the end of if, function will return None
+    if it doesn't return anything else """
+    """ could also retstructure if to deal w locations and commands"""
+
     if location != 'beginning' and location != 'end':
         return None
 

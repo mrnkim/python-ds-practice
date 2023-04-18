@@ -22,7 +22,10 @@ def is_palindrome(phrase):
         True
     """
 
+    # could also reverse the whole string and compare it
+
     new_phrase = phrase.lower().replace(" ","")
+
     end = len(new_phrase)//2
     if len(new_phrase) %2 == 0:
          end -= 1

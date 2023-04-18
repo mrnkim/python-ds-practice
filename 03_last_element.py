@@ -12,6 +12,10 @@ def last_element(lst):
         >>> nums == [1, 2, 3]
         True
     """
+
+    # TODO: empty lst is falsey in python, so you can check for that first
+    # by default function just returns None
+
     if lst == []:
         return None
     else:
