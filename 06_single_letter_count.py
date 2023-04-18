@@ -12,4 +12,5 @@ def single_letter_count(word, letter):
     """
     word_lower = word.lower()
     letter_lower = letter.lower()
+
     return word_lower.count(letter_lower)

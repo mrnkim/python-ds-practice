@@ -13,7 +13,19 @@ def weekday_name(day_of_week):
         >>> weekday_name(0)
     """
 
-    weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    #TODO: make weekdays all caps bc it never changes
+
+    #make sure to break apart long objects at the commas
+
+    weekdays = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ]
 
     if day_of_week > 7 or day_of_week < 1:
         return None

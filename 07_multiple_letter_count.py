@@ -7,6 +7,8 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    #can make dict comprehension here by passing in 0 as second arg to .get
+
     freqs = {}
 
     for letter in phrase:
